@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import { BrowserRouter, Navigate, NavLink, Route, Routes } from "react-router-dom"
 import logo from "../logo.svg";
 import { routes } from "./routes";
+import ShoppingPage from '../02-component-patterns/pages/ShoppingPage';
 
 export const Navigation = () => {
     return (
@@ -23,7 +24,7 @@ export const Navigation = () => {
                         </ul>
                     </nav>
                     <Routes>
-                        <Route path="/" element={<div>Home</div>} />
+                        <Route path="/" element={<ShoppingPage />} />
                         <Route path="/about" element={<div>About</div>} />
                         <Route path="/users" element={<div>Users</div>} />
 
